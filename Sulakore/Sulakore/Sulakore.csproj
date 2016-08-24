@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2504128-D961-4D6A-9453-9D4CAC24627E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sulakore</RootNamespace>
+    <AssemblyName>Sulakore</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Sulakore.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Communication\DataToEventArgs.cs" />
+    <Compile Include="Design\Draw.cs" />
+    <Compile Include="Habbo\Components\HClient.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Habbo\Game Events\Host Events\HostBanPlayerEvent.cs" />
+    <Compile Include="Habbo\Game Events\Host Events\HostChangeClothesEvent.cs" />
+    <Compile Include="Habbo\Game Events\Host Events\HostChangeMottoEvent.cs" />
+    <Compile Include="Habbo\Game Events\Host Events\HostChangeStanceEvent.cs" />
+    <Compile Include="Habbo\Game Events\Host Events\HostClickPlayerEvent.cs" />
+    <Compile Include="Habbo\Game Events\Host Events\HostDanceEvent.cs" />
+    <Compile Include="Habbo\Game Events\Host Events\HostExitEvent.cs" />
+    <Compile Include="Habbo\Game Events\Host Events\HostGestureEvent.cs" />
+    <Compile Include="Habbo\Game Events\Host Events\HostKickedEvent.cs" />
+    <Compile Include="Habbo\Game Events\Host Events\HostKickPlayerEvent.cs" />
+    <Compile Include="Habbo\Game Events\Host Events\HostMoveFurnitureEvent.cs" />
+    <Compile Include="Habbo\Game Events\Host Events\HostMutePlayerEvent.cs" />
+    <Compile Include="Habbo\Game Events\Host Events\HostNavigateEvent.cs" />
+    <Compile Include="Habbo\Game Events\Host Events\HostSayEvent.cs" />
+    <Compile Include="Habbo\Game Events\Host Events\HostShoutEvent.cs" />
+    <Compile Include="Habbo\Game Events\Host Events\HostSignEvent.cs" />
+    <Compile Include="Habbo\Game Events\Host Events\HostTradeEvent.cs" />
+    <Compile Include="Habbo\Game Events\Host Events\HostWalkEvent.cs" />
+    <Compile Include="Habbo\HGameData.cs" />
+    <Compile Include="Habbo\Enumerators.cs" />
+    <Compile Include="Habbo\HBase.cs" />
+    <Compile Include="Communication\HConnection.cs" />
+    <Compile Include="Communication\IHClient.cs" />
+    <Compile Include="Communication\IHServer.cs" />
+    <Compile Include="Habbo\HHeaders.cs" />
+    <Compile Include="Habbo\HPoint.cs" />
+    <Compile Include="Habbo\HSession.cs" />
+    <Compile Include="Habbo\IHabboEvent.cs" />
+    <Compile Include="Habbo\IPlayerSession.cs" />
+    <Compile Include="Protocol\Ancient.cs" />
+    <Compile Include="Protocol\ByteUtils.cs" />
+    <Compile Include="Protocol\BigEndian.cs" />
+    <Compile Include="Protocol\Components\HMConstructer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Protocol\Components\HMScheduler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Protocol\Encryption\BigInteger.cs" />
+    <Compile Include="Protocol\Encryption\HKeyExchange.cs" />
+    <Compile Include="Protocol\Encryption\RSAKey.cs" />
+    <Compile Include="Protocol\Enumerators.cs" />
+    <Compile Include="Protocol\HMessage.cs" />
+    <Compile Include="Protocol\Encryption\HRC4.cs" />
+    <Compile Include="Protocol\HSchedule.cs" />
+    <Compile Include="SKore.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Wrappers\WebClientEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Habbo\Game Events\Player Events\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

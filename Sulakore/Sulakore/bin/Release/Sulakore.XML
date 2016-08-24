@@ -1,0 +1,579 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Sulakore</name>
+    </assembly>
+    <members>
+        <member name="T:Sulakore.Habbo.HBans">
+            <summary>
+            Specifies the different types of bans found in-game.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HBans.Hour">
+            <summary>
+            The original value for the packet is RWUAM_BAN_USER_DAY.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HBans.Day">
+            <summary>
+            The original value for the packet is RWUAM_BAN_USER_HOUR.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HBans.Permanent">
+            <summary>
+            The original value for the packet is RWUAM_BAN_USER_PERM.
+            </summary>
+        </member>
+        <member name="T:Sulakore.Habbo.HDances">
+            <summary>
+            Specifies the different types of dances your player can perform in-game.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HDances.None">
+            <summary>
+            Represents a non-dancing player.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HDances.Normal">
+            <summary>
+            Represents the default dance any player can perform.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HDances.DuckFunk">
+            <summary>
+            Represents the duck funk dance. (HC Only)
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HDances.PogoMogo">
+            <summary>
+            Represents the pogo mogo dance. (HC Only).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HDances.TheRollie">
+            <summary>
+            Represents the rollie dance. (HC Only)
+            </summary>
+        </member>
+        <member name="T:Sulakore.Habbo.HDirections">
+            <summary>
+            Specifies the compass locations of an object/player in-game.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HDirections.North">
+            <summary>
+            Represents an object/player facing north.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HDirections.NorthEast">
+            <summary>
+            Represents an object/player facing north east.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HDirections.East">
+            <summary>
+            Represents an object/player facing east.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HDirections.SouthEast">
+            <summary>
+            Represents an object/player facing south east.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HDirections.South">
+            <summary>
+            Represents an object/player facing south.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HDirections.SouthWest">
+            <summary>
+            Represents an object/player facing south west.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HDirections.West">
+            <summary>
+            Represents an object/player facing west.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HDirections.NorthWest">
+            <summary>
+            Represents an object/player facing north west.
+            </summary>
+        </member>
+        <member name="T:Sulakore.Habbo.HGenders">
+            <summary>
+            Specifies the different gender types in-game.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HGenders.Male">
+            <summary>
+            Represents a male player.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HGenders.Female">
+            <summary>
+            Represents a female player.
+            </summary>
+        </member>
+        <member name="T:Sulakore.Habbo.HGestures">
+            <summary>
+            Specifies a set of gestures/actions a player can perform in-game.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HGestures.None">
+            <summary>
+            Represents a player without any gesture.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HGestures.Wave">
+            <summary>
+            Represents a player waving.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HGestures.BlowKiss">
+            <summary>
+            Represents a player blowing a kiss. (HC Only)
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HGestures.Laugh">
+            <summary>
+            Represents a player laughing. (HC Only)
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HGestures.Idle">
+            <summary>
+            Represents a player sleeping.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HGestures.PogoHop">
+            <summary>
+            Represents a player hopping once. (HC Only)
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HGestures.ThumbsUp">
+            <summary>
+            Represents a player raising a thumbs up.
+            </summary>
+        </member>
+        <member name="T:Sulakore.Habbo.HHotels">
+            <summary>
+            Specifies every hotel compatible with Sulakore.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HHotels.com">
+            <summary>
+            Represents http://www.Habbo.com (United States).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HHotels.com_br">
+            <summary>
+            Represents http://www.Habbo.com.br (Brazil).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HHotels.com_tr">
+            <summary>
+            Represents http://www.Habbo.com.tr (Turkey).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HHotels.de">
+            <summary>
+            Represents http://www.Habbo.de (Germany).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HHotels.dk">
+            <summary>
+            Represents http://www.Habbo.dk (Denmark).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HHotels.es">
+            <summary>
+            Represents http://www.Habbo.es (Spain).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HHotels.fi">
+            <summary>
+            Represents http://www.Habbo.fi (Finland).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HHotels.fr">
+            <summary>
+            Represents http://www.Habbo.fr (France).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HHotels.it">
+            <summary>
+            Represents http://www.Habbo.it (Italy).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HHotels.nl">
+            <summary>
+            Represents http://www.Habbo.nl (Netherlands).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HHotels.no">
+            <summary>
+            Represents http://www.Habbo.no (Norway).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HHotels.se">
+            <summary>
+            Represents http://www.Habbo.se (Sweden).
+            </summary>
+        </member>
+        <member name="T:Sulakore.Habbo.HModels">
+            <summary>
+            Specifies the different types of room models you can create in-game.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HModels.a">
+            <summary>
+            Represents a room with 104 tiles(8x13).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HModels.b">
+            <summary>
+            Represents a room with 94 tiles((11x10) - (4x4)).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HModels.c">
+            <summary>
+            Represents a room with 36 tiles(6x6).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HModels.d">
+            <summary>
+            Represents a room with 84 tiles(6x14).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HModels.e">
+            <summary>
+            Represents a room with 80 tiles(10x8).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HModels.f">
+            <summary>
+            Represents a room with 84 tiles((10x10) - ((2x4)x2))
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HModels.i">
+            <summary>
+            Represents a room with 416 tiles(16x26).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HModels.j">
+            <summary>
+            Represents a room with 380 tiles((20x22) - (10x6)).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HModels.k">
+            <summary>
+            Represents a room with 448 tiles(((24x26) - (8x10)) - ((8x4)x3)).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HModels.l">
+            <summary>
+            Represents a room with 352 tiles((20x20) - (4x12))
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HModels.m">
+            <summary>
+            Represents a room with 704 tiles((28x28) - (10x8))
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HModels.n">
+            <summary>
+            Represents a room with 368 tiles((20x20) - (8x4)).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HModels.s">
+            <summary>
+            Represents a room with 35 tiles(5x7).
+            </summary>
+        </member>
+        <member name="T:Sulakore.Habbo.HPages">
+            <summary>
+            Specifies the set of pages that are compatible with Sulakore.HSession[HPages].
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HPages.Me">
+            <summary>
+            Represents http://www.Habbo-/me
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HPages.Home">
+            <summary>
+            Represents http://www.Habbo-/home/-
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HPages.Client">
+            <summary>
+            Represents http://www.Habbo-/client
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HPages.Profile">
+            <summary>
+            Represents http://www.Habbo-/profile
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HPages.IDAvatars">
+            <summary>
+            Represents https://www.Habbo-/identity/avatars
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HPages.IDSettings">
+            <summary>
+            Represents http://www.Habbo-/identity/settings
+            </summary>
+        </member>
+        <member name="T:Sulakore.Habbo.HSigns">
+            <summary>
+            Specifies the different types of signs found in-game.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HSigns.Random">
+            <summary>
+            Represents a random sign within the range of (0 - 18)
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HSigns.Zero">
+            <summary>
+            Represents a sign with an image of the number zero.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HSigns.One">
+            <summary>
+            Represents a sign with an image of the number one.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HSigns.Two">
+            <summary>
+            Represents a sign with an image of the number two.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HSigns.Three">
+            <summary>
+            Represents a sign with an image of the number three.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HSigns.Four">
+            <summary>
+            Represents a sign with an image of the number four.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HSigns.Five">
+            <summary>
+            Represents a sign with an image of the number five.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HSigns.Six">
+            <summary>
+            Represents a sign with an image of the number six.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HSigns.Seven">
+            <summary>
+            Represents a sign with an image of the number seven.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HSigns.Eight">
+            <summary>
+            Represents a sign with an image of the number eight.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HSigns.Nine">
+            <summary>
+            Represents a sign with an image of the number nine.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HSigns.Ten">
+            <summary>
+            Represents a sign with an image of the number ten.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HSigns.Heart">
+            <summary>
+            Represents a sign with an image of a heart.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HSigns.Skull">
+            <summary>
+            Represents a sign with an image of a skull.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HSigns.Exclamation">
+            <summary>
+            Represents a sign with an image of a exclamation mark.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HSigns.Soccerball">
+            <summary>
+            Represents a sign with an image of a soccerball.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HSigns.Smiley">
+            <summary>
+            Represents a sign with an image of a smiley face.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HSigns.Redcard">
+            <summary>
+            Represents a sign with an image of a small redcard.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HSigns.Yellowcard">
+            <summary>
+            Represents a sign with an image of a small yellowcard.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HSigns.Invisible">
+            <summary>
+            Represents a an empty invisible sign with no image.
+            </summary>
+        </member>
+        <member name="T:Sulakore.Habbo.HStances">
+            <summary>
+            Specifies the state of a player.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HStances.Stand">
+            <summary>
+            Represents a player that is standing.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HStances.Sit">
+            <summary>
+            Represents a player that is sitting.
+            </summary>
+        </member>
+        <member name="T:Sulakore.Habbo.HThemes">
+            <summary>
+            Specifies the different types of speech bubble themes found in-game.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HThemes.Random">
+            <summary>
+            Represents a random speech bubble consisting of (White, Red, Blue, Yellow, Green, Black).
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HThemes.White">
+            <summary>
+            Represents the default(white) speech bubble.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HThemes.Red">
+            <summary>
+            Represents the red speech bubble.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HThemes.Blue">
+            <summary>
+            Represents the blue speech bubble.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HThemes.Yellow">
+            <summary>
+            Represents the yellow speech bubble.
+            </summary>
+            
+        </member>
+        <member name="F:Sulakore.Habbo.HThemes.Green">
+            <summary>
+            Represents the green speech bubble.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HThemes.Black">
+            <summary>
+            Represents the black speech bubble.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HThemes.Ice">
+            <summary>
+            Represents the light-blue(ice) speech bubble.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HThemes.Pink">
+            <summary>
+            Represents the pink speech bubble.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HThemes.Purple">
+            <summary>
+            Represents the purple speech bubble.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HThemes.Gold">
+            <summary>
+            Represents the gold speech bubble.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HThemes.Turquoise">
+            <summary>
+            Represents the turquoise speech bubble.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HThemes.Hearts">
+            <summary>
+            Represents a speech bubble with hearts in the background.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HThemes.Roses">
+            <summary>
+            Represents a speech bubble with roses in the background.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HThemes.Pig">
+            <summary>
+            Represents a speech bubble with a pig in the background.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HThemes.Dog">
+            <summary>
+            Represents a speech bubble with a dog in the background.
+            </summary>
+        </member>
+        <member name="F:Sulakore.Habbo.HThemes.Swords">
+            <summary>
+            Represents a speech bubble with swords in the background.
+            </summary>
+        </member>
+        <member name="P:Sulakore.Protocol.Encryption.RSAKey.e">
+            <summary>
+            Public Exponent
+            </summary>
+        </member>
+        <member name="P:Sulakore.Protocol.Encryption.RSAKey.n">
+            <summary>
+            Public Modulus
+            </summary>
+        </member>
+        <member name="P:Sulakore.Protocol.Encryption.RSAKey.d">
+            <summary>
+            Private Exponent
+            </summary>
+        </member>
+        <member name="P:Sulakore.Protocol.Encryption.RSAKey.p">
+            <summary>
+            Secret Prime Factor ( P )
+            </summary>
+        </member>
+        <member name="P:Sulakore.Protocol.Encryption.RSAKey.q">
+            <summary>
+            Secret Prime Factor ( Q )
+            </summary>
+        </member>
+        <member name="P:Sulakore.Protocol.Encryption.RSAKey.dmp1">
+            <summary>
+            d mod ( p - 1 )
+            </summary>
+        </member>
+        <member name="P:Sulakore.Protocol.Encryption.RSAKey.dmq1">
+            <summary>
+            d mod ( q - 1 )
+            </summary>
+        </member>
+        <member name="P:Sulakore.Protocol.Encryption.RSAKey.iqmp">
+            <summary>
+            (Inverse)q mod p
+            </summary>
+        </member>
+    </members>
+</doc>
